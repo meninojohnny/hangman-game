@@ -101,7 +101,7 @@ class _HomePageState extends State<HomePage> {
                         Text(
                           "Dica: ${gameController.tip}",
                           style: const TextStyle(
-                              fontSize: 23, color: Colors.white),
+                              fontSize: 22, color: Colors.white),
                         ),
                     ],
                   ),
