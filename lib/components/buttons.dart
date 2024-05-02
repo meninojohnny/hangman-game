@@ -6,16 +6,16 @@ class Butons {
   final List<String> alphabet;
   int counter;
   final Function(String) setLetter;
-  final List<String> letrasEscolhidas;
+  final List<String> chosenLetters;
 
-  Butons({required this.numButons, required this.alphabet, required this.setLetter, required this.counter, required this.letrasEscolhidas});
+  Butons({required this.numButons, required this.alphabet, required this.setLetter, required this.counter, required this.chosenLetters});
 
   List<Widget> generateButons() {
     List<Widget> buttons = [];
 
     for (int i = 0; i <= numButons; i++) {
       String letter = alphabet[i + counter];
-      buttons.add(Button(letter: letter, setLetter: setLetter, press: letrasEscolhidas.contains(letter),));
+      buttons.add(Button(letter: letter, setLetter: setLetter, press: chosenLetters.contains(letter),));
     }
     counter += 1;
     return buttons;

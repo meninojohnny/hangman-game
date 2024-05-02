@@ -3,9 +3,9 @@ import 'package:hangman_game/components/buttons.dart';
 
 class Keyboard extends StatelessWidget {
   final Function(String) setLetter;
-  final List<String> letrasEscolhidas;
+  final List<String> chosenLetters;
   const Keyboard(
-      {super.key, required this.setLetter, required this.letrasEscolhidas});
+      {super.key, required this.setLetter, required this.chosenLetters});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class Keyboard extends StatelessWidget {
                   alphabet: alphabet,
                   setLetter: setLetter,
                   counter: 0,
-                  letrasEscolhidas: letrasEscolhidas)
+                  chosenLetters: chosenLetters)
               .generateButons(),
         ),
         Row(
@@ -27,7 +27,7 @@ class Keyboard extends StatelessWidget {
                   alphabet: alphabet,
                   setLetter: setLetter,
                   counter: 8,
-                  letrasEscolhidas: letrasEscolhidas)
+                  chosenLetters: chosenLetters)
               .generateButons(),
         ),
         Row(
@@ -36,7 +36,7 @@ class Keyboard extends StatelessWidget {
                   alphabet: alphabet,
                   setLetter: setLetter,
                   counter: 16,
-                  letrasEscolhidas: letrasEscolhidas)
+                  chosenLetters: chosenLetters)
               .generateButons(),
         ),
         Row(
@@ -46,7 +46,7 @@ class Keyboard extends StatelessWidget {
                   alphabet: alphabet,
                   setLetter: setLetter,
                   counter: 24,
-                  letrasEscolhidas: letrasEscolhidas)
+                  chosenLetters: chosenLetters)
               .generateButons(),
         ),
       ],

@@ -123,7 +123,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                   Keyboard(
                     setLetter: setLetter,
-                    letrasEscolhidas: gameController.chosenLetters,
+                    chosenLetters: gameController.chosenLetters,
                   )
                 ],
               ),
