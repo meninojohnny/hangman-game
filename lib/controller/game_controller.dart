@@ -42,7 +42,6 @@ class GameController {
 
   }
 
-
   void verifyError(letter) {
     if (!word.split('').contains(letter)) {
       _counterError++;
@@ -52,7 +51,7 @@ class GameController {
   bool verifyWin() {
     bool controller = true;
     for (String i in word.split('')) {
-      if (!_chosenLetters.contains(i)) {
+      if (!_chosenLetters.contains(i) && i != " ") {
         controller = false;
       }
     }

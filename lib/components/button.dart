@@ -26,7 +26,7 @@ class ButtonState extends State<Button> {
           margin: const EdgeInsets.all(2),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
-            color: widget.press ? Colors.grey : Colors.white,
+            color: widget.press ? const Color.fromARGB(255, 191, 188, 188) : Colors.white,
           ),
           child: Center(
             child: Text(

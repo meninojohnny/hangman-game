@@ -16,7 +16,6 @@ class Butons {
     for (int i = 0; i <= numButons; i++) {
       String letter = alphabet[i + counter];
       buttons.add(Button(letter: letter, setLetter: setLetter, press: letrasEscolhidas.contains(letter),));
-      debugPrint(counter.toString());
     }
     counter += 1;
     return buttons;
