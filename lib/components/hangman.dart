@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class Strength extends StatelessWidget {
+class Hangman extends StatelessWidget {
   final int errors;
-  const Strength({super.key, required this.errors});
+  const Hangman({super.key, required this.errors});
 
   @override
   Widget build(BuildContext context) {

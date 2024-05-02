@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hangman_game/components/strength.dart';
+import 'package:hangman_game/components/hangman.dart';
 import 'package:hangman_game/components/keyboard.dart';
 import 'package:hangman_game/components/word.dart';
 import 'package:hangman_game/controller/game_controller.dart';
@@ -108,7 +108,7 @@ class _HomePageState extends State<HomePage> {
                   const SizedBox(
                     height: 10,
                   ),
-                  Strength(
+                  Hangman(
                     errors: gameController.counterError,
                   ),
                   const SizedBox(
