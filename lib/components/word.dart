@@ -7,7 +7,7 @@ class Word extends StatelessWidget {
   final List<Letter> wordWidgets = [];
   Word({super.key, required this.word, required this.chosenLetters});
 
-  void gerarWidgets() {
+  void generateWidgets() {
     word.toUpperCase().split("").forEach((element) {
       wordWidgets.add(
         Letter(
@@ -20,7 +20,7 @@ class Word extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    gerarWidgets();
+    generateWidgets();
     return Wrap(
       alignment: WrapAlignment.center,
       children: wordWidgets,
